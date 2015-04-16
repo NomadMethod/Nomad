@@ -13,7 +13,7 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: root
+  username: bryan
   password: tarheels2
   socket: /var/run/mysqld/mysqld.sock
 
