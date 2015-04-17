@@ -1,8 +1,8 @@
 <h1>Blog Post</h1>
+<%= link_to "Create New Post", new_post_path %>
 
-
-<h3>Sample Post One</h3>
-<p><%= @content_first %>
-<hr>
-<h3>Sample Post Two</h3>
-<p><%= @content_second %>
+<% @posts.each do |post| %>
+    <h3><%= link_to post.title, post %></h3>
+    <p><%= post.body %>
+    <hr>   
+<% end %>
