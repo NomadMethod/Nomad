@@ -1,2 +1,7 @@
 <h1>Category Index</h1>
 
+<ul>
+    <% @categories.each do |category| %>
+		<li><%= link_to category.name, category %></li>
+    <% end %>
+</ul>
