@@ -1,2 +1,528 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+	<section id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<!--<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+		</ol>
+		-->
+		<div class="carousel-inner">
+			<!--
+			<div class="item active">
+				<img class="img-responsive" runat="server" src="~/img/slide.jpg" alt="Total Lawn Care Summer Services">
+				<div class="container">
+					<div class="carousel-caption" itemscope itemtype="http://schema.org/LocalBusiness">
+						<h1 class="slide-title font-impact" itemprop="name">Total Lawn Care</h1>
+						<div class="row">
+							<h2 class="col-sm-6 h4 slide-service mar-0" itemprop="description">Summer &amp; Winter Services</h2>
+							<div class="hidden-xs col-sm-6 h4 slide-phone mar-0 text-right" itemprop="telephone">320.290.9052</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			-->
+			<div class="item active">
+				<img class="img-responsive" runat="server" src="~/img/winterslide.jpg" alt="Total Lawn Care Winter Services">
+				<div class="container">
+					<div class="carousel-caption" itemscope itemtype="http://schema.org/LocalBusiness">
+						<h1 class="slide-title font-impact" itemprop="name">Total Lawn Care</h1>
+						<div class="row">
+							<h2 class="col-sm-6 h4 slide-service mar-0" itemprop="description">Summer &amp; Winter Services</h2>
+							<div class="hidden-xs col-sm-6 h4 slide-phone mar-0 text-right" itemprop="telephone">320.290.9052</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+		-->
+	</section>
+		
+	
+	<section class="navigation-container">	<!--Maintains the same height for when the navigation is sent to the mobile menu -->
+		<h1 class="document-title">Main Navigation</h1>
+		<nav class="navbar navbar-fixed-top" role="navigation" aria-label="main navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand visible-xs-block" runat="server" href="~/"><img runat="server" src="~/img/logo-leaf.jpg" alt="Total Lawn Care Logo" /></a>
+				</div>
+				<div class="collapse navbar-collapse row test">
+					<ul class="nav navbar-nav col-sm-5">
+						<li class="col-sm-6"><a runat="server" href="#About">Our Story</a></li>
+						<!--<li class="col-sm-4"><a runat="server" href="#Team">Our Team</a></li>-->
+						<li class="col-sm-6"><a runat="server" href="#Services">Services</a></li>
+						<!--<li class="col-sm-6">							
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li class="dropdown-header">Summer</li>
+								<li><a href="#Services">Mowing</a></li>
+								<li><a href="#Services">Trimming</a></li>
+								<li class="divider"></li>
+								<li class="dropdown-header">Winter</li>
+								<li><a href="#Services">Plowing</a></li>
+								<li><a href="#Services">Salting</a></li>
+							</ul>
+							-->
+						</li>
+					</ul>
+					
+					<div class="col-sm-2 hidden-xs">
+						<a class="logo-sticky" runat="server" href="~/" title="Home"><img class="img-responsive center-block" runat="server" src="~/img/logo-leaf.jpg" alt="Total Lawn Care Logo" /></a>
+					</div>
+				
+					<ul class="nav navbar-nav col-sm-5">
+						<!--<li class="col-sm-4"><a runat="server" href="#Tips">Care Tips</a></li>-->
+						<li class="col-sm-6"><a runat="server" href="#Testimonials">Testimonials</a></li>
+						<li class="col-sm-6"><a runat="server" href="#Contact">Contact Us</a></li>
+					</ul>
+					
+				</div><!-- /.nav-collapse -->
+			</div><!-- /.container -->
+		</nav>
+	</section>
+
+		
+	<section id="About">
+		<div class="container">
+			<h1 class="document-title">About Us</h1>
+			<section class="row text-center">	
+				<h1 class="text-center title-lg">Our Story</h1>		
+				<article class="col-sm-4 spacer-mar-vert">
+					<img class="hidden-xs img-about" runat="server" src="~/img/idea.png" alt="Where we started" />
+					<h2 class="h3">Where We Started</h2>
+					<p>
+						Total Lawn Care was started up about 15 years ago in Little Falls. It was started by a husband and wife team which had a truck, one small riding lawn mower, one push mower, a little trailer, and about five resident accounts.
+					</p>
+				</article>
+				
+				<article class="col-sm-4 spacer-mar-vert">
+					<img class="hidden-xs img-about" runat="server" src="~/img/book.png" alt="Where we are" />
+					<h2 class="h3">Where We Are</h2>
+					<p>
+						To this day, Total Lawn Care is arguably the biggest lawn and snow care company in the town of Little Falls - managing close to 100 accounts throughout Minnesota including the cities of Little Falls, Saint Cloud, Brainerd, Mille Lacs, Pierz, Royalton, Upsala-Swanville area, Bowlus, and Rice.
+					</p>
+				</article>
+				
+				<article class="col-sm-4 spacer-mar-vert">
+					<img class="hidden-xs img-about" runat="server" src="~/img/trophy.png" alt="Where we're going" />
+					<h2 class="h3">Where We're Going</h2>
+					<p>
+						Total Lawn Care doesn't exist without the strong relationships they create with their customers. Our business goal is to be your number one choice as a caretaker for any lawn care, snow removal, personal or business property care. Let us help you with what we know best, and we'll we do whatever we can to ensure our partnership will last.
+					</p>
+				</article>
+			</section>
+		</div>
+		
+		<div class="container-fluid bg-para bg-preServices spacer-pad-vert" data-type="background" data-speed="10" id="Team">
+			<section class="container team-container spacer-mar-vert">
+				<!--<div class="row">
+					<div class="col-sm-8 text-white">
+						<h1>Meet Our Team</h1>
+						<p>Total Lawn Care is built on trust, and our team of professionals are the epidemy of trust and honesty. Total Lawn Care is built on trust, and our team of professionals are the epidemy of trust and honesty.</p>
+					</div>				
+					<div class="col-sm-4 text-center spacer-pad-vert bg-white">
+						<img class="img-circle" runat="server" src="~/img/ben.jpg" alt="Portrait of Ben" />
+						<h2 class="h3">Ben</h2>
+						<p>
+							Total Lawn Care was started up about 15 years ago in Little Falls. It was started by a husband and wife team which had a truck, one small riding lawn mower, one push mower, a little trailer, and about five resident accounts.
+						</p>
+					</div>
+					<div class="col-sm-4 text-center spacer-pad-vert bg-white">
+						<img class="img-circle" runat="server" src="~/img/ben.jpg" alt="Portrait of John" />
+						<h2 class="h3">John</h2>
+						<p>
+							Total Lawn Care was started up about 15 years ago in Little Falls. It was started by a husband and wife team which had a truck, one small riding lawn mower, one push mower, a little trailer, and about five resident accounts.
+						</p>
+					</div>
+					<div class="col-sm-8 text-white">
+						<h1>Meet Our Team</h1>
+						<p>Total Lawn Care is built on trust, and our team of professionals are the epidemy of trust and honesty. Total Lawn Care is built on trust, and our team of professionals are the epidemy of trust and honesty.</p>
+					</div>	
+				</div>-->
+				<span class="text-center">
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<!-- Responsive Ad -->
+					<ins class="adsbygoogle"
+						 style="display:block"
+						 data-ad-client="ca-pub-1306609871206642"
+						 data-ad-slot="8336221616"
+						 data-ad-format="auto"></ins>
+					<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</span>
+			</section>
+		</div>
+	</section>
+	
+	
+	
+			
+	<section>
+		<div class="container text-center" id="Services">
+			<h1 class="title-lg">Services</h1>
+			<p class="lead">No matter what season it is, Total Lawn Care has you covered. Whether it's preparing your lawn for the upcoming Summer to protecting your lawn from the looming Winter, we're prepared to relieve the stress of lawn and property care.</p>
+			<div class="row">
+				<div class="col-sm-6">		
+					<div class="panel panel-success">
+						<div class="panel-heading"><h2 class="h3">Summer</h2></div>
+						<div class="panel-body">
+							<ul class="list-unstyled services-list">
+								<li>Spring Clean-Up</li>
+								<li>Parking Lot Sweeping</li>
+								<li>Lawn Mowing</li>
+								<li>De-thatching</li>
+								<li>Aerating</li>
+								<li>Small Landscaping</li>
+								<li>Bobcat Work</li>
+								<li>Gutter Cleaning</li>
+								<li>Tree Transplanting</li>
+								<li>Leaf Clean Up</li>
+								<li>Custom Spraying & Fertilization</li>
+								<li>...and more!</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">				
+					<div class="panel panel-info">
+						<div class="panel-heading"><h2 class="h3">Winter</h2></div>
+						<div class="panel-body">								
+							<ul class="list-unstyled services-list">
+								<li>Commercial Parking Lot Plowing</li>
+								<li>Residential Driveway Plowing</li>
+								<li>Sidewalk Plowing</li>
+								<li>Sidewalk Salting</li>
+								<li>Parking Lot Salting</li>
+								<li>Parking Lot Scraping</li>
+								<li>Roof Raking</li>
+								<li>...and more!</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="arrow"></div>
+		<section class="container-fluid bg-para bg-preTips" data-type="background" data-speed="10">
+			<div class="row">				
+				<div class="col-md-6 col-md-offset-3 services-cta text-center text-white spacer-pad-vert">
+					<h1 class="title-lg">Get Started Today!</h1>
+					<p>Drop us a line and see how we can help you. <br />Together we can coordinate a better future.</p>
+					<a role="button" class="btn btn-lg btn-success" runat="server" href="#Contact">Contact Us - Get Started</a>
+				</div>
+			</div>
+		</section>
+	</section>
+		
+	<!--
+	<section>
+		<h1 class="document-title">Total Lawn Care Tips</h1>
+		<section class="container" id="Tips">
+			<div class="row spacer-pad-vert">
+				<div class="hidden-xs hidden-sm col-md-5 col-md-offset-1">
+					<img class="img-responsive img-diy" runat="server" src="~/img/diy.png" alt="Do it yourself tips" />
+				</div>
+				<div class="col-md-6 text-center">
+					<div class="h1 text-uppercase">Do-It-Yourself</div>
+					<div class="h3">with our</div>
+					<h1 class="text-uppercase"><strong><em><u>Total Lawn Care Tips</u></em></strong></h1>
+				</div>
+			</div>
+			<div class="row caretips-circles" id="caretips-circles">
+				<div class="col-md-3 text-center">
+					<div class="col-xs-6" data-target="#tip1">
+						<a class="btn btn-md btn-primary visible-xs-block visible-sm-block btn-tips spacer-mar-vert" data-target="#tip1" title="View tips on Lawn Mowing">Lawn Mowing</a>
+					</div>
+					<div class="visible-md-block visible-lg-block">
+						<h3>Mowing</h3>
+						<img class="img-circle" runat="server" src="~/img/mower.jpg" alt="Lawn Mowing" />
+						<p><a class="btn btn-default btn-tips spacer-mar-vert" data-target="#tip1" href="#caretips-circles" role="button" title="View tips on Lawn Mowing">View details »</a></p>
+					</div>
+				</div>
+				<div class="col-md-3 text-center">
+					<div class="col-xs-6" data-target="#tip1">
+						<a class="btn btn-md btn-primary visible-xs-block visible-sm-block btn-tips spacer-mar-vert" data-target="#tip2" title="View tips on Water and Fertilization">Water & Fert.</a>
+					</div>
+					<div class="visible-md-block visible-lg-block">
+						<h3>Water &amp; Fertilization</h3>
+						<img class="img-circle" runat="server" src="~/img/mower.jpg" alt="Water and Fertilization" />
+						<p><a class="btn btn-default btn-tips spacer-mar-vert" data-target="#tip2" href="#caretips-circles" role="button" title="View tips on Water and Fertilization">View details »</a></p>
+					</div>
+				</div>
+				<div class="col-md-3 text-center">
+					<div class="col-xs-6" data-target="#tip1">
+						<a class="btn btn-md btn-primary visible-xs-block visible-sm-block btn-tips spacer-mar-vert" data-target="#tip3" title="View tips on Trimming">Trimming</a>
+					</div>
+					<div class="visible-md-block visible-lg-block">
+						<h3>Trimming</h3>
+						<img class="img-circle" runat="server" src="~/img/mower.jpg" alt="Trimming" />
+						<p><a class="btn btn-default btn-tips spacer-mar-vert" data-target="#tip3" href="#caretips-circles" role="button" title="View tips on Trimming">View details »</a></p>
+					</div>
+				</div>
+				<div class="col-md-3 text-center">
+					<div class="col-xs-6" data-target="#tip1">
+						<a class="btn btn-md btn-primary visible-xs-block visible-sm-block btn-tips spacer-mar-vert" data-target="#tip4" title="View tips on Something">Something <span class="label label-success">New!</span></a>
+					</div>
+					<div class="visible-md-block visible-lg-block">
+						<h3>Something <span class="label label-success">New!</span></h3>
+						<img class="img-circle" runat="server" src="~/img/mower.jpg" alt="Something" />
+						<p><a class="btn btn-default btn-tips spacer-mar-vert" data-target="#tip4" href="#caretips-circles" role="button" title="View tips on Something">View details »</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="caretips-explained" id="caretips-explained">
+			<div class="container pos-rel">
+				<button class="btn tips-btn-min" role="button">Minimize</button>
+				<div id="tip1" class="caretips-tip spacer-pad-vert text-white text-center clearfix">
+					<h1>Mowing</h1>
+					<div class="col-sm-6">
+						<h3 class="text-underline"><u>Timing</u></h3>
+						<p>It is preferred to mow your lawn in either the early morning or late evening. Try to mow your lawn when your lawn is dry, your mower will appreciate it. When mowing wet grass, there is a greater tendency that the grass will tear instead of getting a nice clean cut from your mower blades.</p>
+					</div>
+					<div class="col-sm-6">
+						<h3 class="text-underline"><u>Length</u></h3>
+						<p>Many people assume that they can save some time by mowing their lawn as short as their mower allows. This is false. People think that if they mow their lawn short that they can wait longer until they have to mow again. This is also false. Grass tries to regain what it has lost by rapidly attempting to grow back to its initial length. It is actually preferred to mow your lawn at a higher setting to promote proper root growth and helps to establish a healthier lawn. A longer cut lawn also provides shade for the soil which keeps the soil from drying up and also reduces the possibility of weed growth.</p>
+					</div>
+					<div>
+						<h3 class="text-underline"><u>After Mowing</u></h3>
+						<p>Many people use bags to capture all the mowed lawn that they've just cut. What they're really doing is robbing their lawn of valuable nutrients. Stay away from bagging if you can. Grass clippings have valuable nutrients and chemicals such as nitrogen, phosphorous, and potassium that can greatly increase your lawns all natural fertilizing levels. On the flip side, having too much mulch on your lawn can choke out your lawn from sun a water. If you have excess mulch in an area, simply pick it up and reuse it elsewhere in your lawn.</p>
+					</div>
+				</div>
+				<div id="tip2" class="caretips-tip spacer-pad-vert text-white text-center clearfix">
+					<h1>Water & Fertilization</h1>
+					<div class="col-sm-6">
+						<h3 class="text-underline"><u>Timing</u></h3>
+						<p>It is preferred to mow your lawn in either the early morning or late evening. Try to mow your lawn when your lawn is dry, your mower will appreciate it. When mowing wet grass, there is a greater tendency that the grass will tear instead of getting a nice clean cut from your mower blades.</p>
+					</div>
+					<div class="col-sm-6">
+						<h3 class="text-underline"><u>Length</u></h3>
+						<p>Many people assume that they can save some time by mowing their lawn as short as their mower allows. This is false. People think that if they mow their lawn short that they can wait longer until they have to mow again. This is also false. Grass tries to regain what it has lost by rapidly attempting to grow back to its initial length. It is actually preferred to mow your lawn at a higher setting to promote proper root growth and helps to establish a healthier lawn. A longer cut lawn also provides shade for the soil which keeps the soil from drying up and also reduces the possibility of weed growth.</p>
+					</div>
+					<div>
+						<h3 class="text-underline"><u>After Mowing</u></h3>
+						<p>Many people use bags to capture all the mowed lawn that they've just cut. What they're really doing is robbing their lawn of valuable nutrients. Stay away from bagging if you can. Grass clippings have valuable nutrients and chemicals such as nitrogen, phosphorous, and potassium that can greatly increase your lawns all natural fertilizing levels. On the flip side, having too much mulch on your lawn can choke out your lawn from sun a water. If you have excess mulch in an area, simply pick it up and reuse it elsewhere in your lawn.</p>
+					</div>
+				</div>
+				<div id="tip3" class="caretips-tip spacer-pad-vert text-white text-center clearfix">
+					<h1>Trimming</h1>
+					<div class="col-sm-6">
+						<h3 class="text-underline"><u>Timing</u></h3>
+						<p>It is preferred to mow your lawn in either the early morning or late evening. Try to mow your lawn when your lawn is dry, your mower will appreciate it. When mowing wet grass, there is a greater tendency that the grass will tear instead of getting a nice clean cut from your mower blades.</p>
+					</div>
+					<div class="col-sm-6">
+						<h3 class="text-underline"><u>Length</u></h3>
+						<p>Many people assume that they can save some time by mowing their lawn as short as their mower allows. This is false. People think that if they mow their lawn short that they can wait longer until they have to mow again. This is also false. Grass tries to regain what it has lost by rapidly attempting to grow back to its initial length. It is actually preferred to mow your lawn at a higher setting to promote proper root growth and helps to establish a healthier lawn. A longer cut lawn also provides shade for the soil which keeps the soil from drying up and also reduces the possibility of weed growth.</p>
+					</div>
+					<div>
+						<h3 class="text-underline"><u>After Mowing</u></h3>
+						<p>Many people use bags to capture all the mowed lawn that they've just cut. What they're really doing is robbing their lawn of valuable nutrients. Stay away from bagging if you can. Grass clippings have valuable nutrients and chemicals such as nitrogen, phosphorous, and potassium that can greatly increase your lawns all natural fertilizing levels. On the flip side, having too much mulch on your lawn can choke out your lawn from sun a water. If you have excess mulch in an area, simply pick it up and reuse it elsewhere in your lawn.</p>
+					</div>
+				</div>
+				<div id="tip4" class="caretips-tip spacer-pad-vert text-white text-center clearfix">
+					<h1>Something <span class="label label-success">New!</span></h1>
+					<div class="col-sm-6">
+						<h3 class="text-underline"><u>Timing</u></h3>
+						<p>It is preferred to mow your lawn in either the early morning or late evening. Try to mow your lawn when your lawn is dry, your mower will appreciate it. When mowing wet grass, there is a greater tendency that the grass will tear instead of getting a nice clean cut from your mower blades.</p>
+					</div>
+					<div class="col-sm-6">
+						<h3 class="text-underline"><u>Length</u></h3>
+						<p>Many people assume that they can save some time by mowing their lawn as short as their mower allows. This is false. People think that if they mow their lawn short that they can wait longer until they have to mow again. This is also false. Grass tries to regain what it has lost by rapidly attempting to grow back to its initial length. It is actually preferred to mow your lawn at a higher setting to promote proper root growth and helps to establish a healthier lawn. A longer cut lawn also provides shade for the soil which keeps the soil from drying up and also reduces the possibility of weed growth.</p>
+					</div>
+					<div>
+						<h3 class="text-underline"><u>After Mowing</u></h3>
+						<p>Many people use bags to capture all the mowed lawn that they've just cut. What they're really doing is robbing their lawn of valuable nutrients. Stay away from bagging if you can. Grass clippings have valuable nutrients and chemicals such as nitrogen, phosphorous, and potassium that can greatly increase your lawns all natural fertilizing levels. On the flip side, having too much mulch on your lawn can choke out your lawn from sun a water. If you have excess mulch in an area, simply pick it up and reuse it elsewhere in your lawn.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+	-->
+	
+	<section class="testimonials-container" id="Testimonials">
+		<h1 class="document-title">Customer Testimonials</h1>
+		<div class="container spacer-pad-vert">
+			<section class="row">		
+				<h3 class="col-xs-12">See What Our Customer's Are Saying...</h3>
+				<div class="col-md-7">
+					<article class="media well well-sm" itemscope itemtype="http://schema.org/Review">
+						<div class="media-body">
+							<h4 class="media-heading" itemprop="author">Be the first to share your experience with Total Lawn Care.</h4>
+						</div>
+					</article>
+					<!--
+					<article class="media well well-sm" itemscope itemtype="http://schema.org/Review">
+						<img class="pull-left img-responsive media-object" runat="server" src="~/img/testimonials/portrait.jpg" alt="Portrait of Bill" />
+						<div class="media-body">
+							<h4 class="media-heading" itemprop="author">Bill</h4>
+							<span itemprop="reviewBody">"I've always enjoyed having Total Lawn Care as a partner. My lawn withstands the beating of many parties and always looks great the next day. Superb quality and service from Total Lawn Care."</span>
+						</div>
+					</article>
+					<article class="media well well-sm" itemscope itemtype="http://schema.org/Review">
+						<img class="pull-left img-responsive media-object" runat="server" src="~/img/testimonials/portrait.jpg" alt="Portrait of Tom" />
+						<div class="media-body">
+							<h4 class="media-heading" itemprop="author">Tom</h4>
+							<span itemprop="reviewBody">I've always enjoyed having Total Lawn Care as a partner. My lawn withstands the beating of many parties and always looks great the next day. Superb quality and service from Total Lawn Care."</span>
+						</div>
+					</article>
+					<article class="media well well-sm" itemscope itemtype="http://schema.org/Review">
+						<img class="pull-left img-responsive media-object" runat="server" src="~/img/testimonials/portrait.jpg" alt="Portrait of Cheryl" />
+						<div class="media-body">
+							<h4 class="media-heading" itemprop="author">Cheryl</h4>
+							<span itemprop="reviewBody">I've always enjoyed having Total Lawn Care as a partner. My lawn withstands the beating of many parties and always looks great the next day. Superb quality and service from Total Lawn Care."</span>
+						</div>
+					</article>
+					-->
+				</div>
+				<div class="col-md-5">
+					<div class="testimonials-spreadword spacer-mar-vert">
+						<div class="row testimonials-phonewire hidden-xs hidden-sm"></div>
+						<h4 class="h1 text-white text-center">Spread the Word!</h4>
+						<div class="spacer-pad-vert">
+							<p>
+								<strong>Our success</strong> has been reliant on creating a great relationship with our customers. 
+								Total Lawn Care has grown from 5 customer accounts to close to 100. We treat every project with the most possible care 
+								and strive to achieve full customer satisfaction. Our goal is for each project to be better than the last. 
+								That's where you come in.
+							</p>
+							<p>
+								<strong>We need your help</strong> to help us define what we're doing right and where we can improve our service. 
+								Good or bad, we want to hear what you have to say about your a-to-z experience with Total Lawn Care of Little Falls.
+							</p>
+						</div>
+						<a role="button" class="btn btn-lg btn-info btn-block" href="#Contact">Share Your Story</a>
+					</div>
+				</div>
+			</section>
+			<div class="spacer-pad-vert row">
+				<h3 class="text-center"><em>Proud Business Partners of Little Falls, MN</em></h3>
+				<span class="col-xs-2 col-sm-2"><img class="img-responsive" runat="server" src="~/img/testimonials/kfc.png" alt="KFC" /></span>
+				<span class="col-xs-2 col-sm-2"><img class="img-responsive" runat="server" src="~/img/testimonials/coborns.png" alt="Coborns"  /></span>
+				<span class="col-xs-2 col-sm-2"><img class="img-responsive" runat="server" src="~/img/testimonials/diamondwillow.png" alt="Diamond Willow Retirement Home"  /></span>
+				<span class="col-xs-2 col-sm-2"><img class="img-responsive" runat="server" src="~/img/testimonials/tcc.png" alt="Tri County Community"  /></span>
+				<span class="col-xs-2 col-sm-2"><img class="img-responsive" runat="server" src="~/img/testimonials/pizzahut.png" alt="Pizza Hut"  /></span>
+				<span class="col-xs-2 col-sm-2"><img class="img-responsive" runat="server" src="~/img/testimonials/mcfs.png" alt="Morrison County Food Shelf"  /></span>
+			</div>
+		</div>
+	</section>
+	
+	<div class="container-fluid bg-para bg-contact" data-type="background" data-speed="10">				
+		<section class="contact-container container" id="Contact">
+				<span class="col-xs-12 text-center alert alert-danger">We're currently experiencing some issues with our form. Please feel free to contact us by calling 320-290-9052. Thank you!</span>
+			<div class="row">
+				<div class="col-md-6">
+					<h1 class="title-lg text-white mar-top-0">Contact Us</h1>
+					<p class="lead"><strong>Need an estimate?</strong> Fill out the form to the right an we'll contact you as soon as we can to arrange an estimate. </p>
+					<p class="lead"><strong>Existing Customer?</strong> Good or bad, we'd love to hear how your experience with Total Lawn Care was. Share your thoughts by filling out the comment box.</p>
+					
+					<div class="contact-methods">
+						<h2 class="document-title">Ways to Contact</h2>
+						<div class="row">
+							<div class="col-sm-2">
+								<span class="text-white"><strong>Phone:</strong></span>
+							</div>
+							<div class="col-sm-10">
+								320.290.9052
+							</div>
+							<div class="col-sm-2">
+								<span class="text-white"><strong>Email:</strong></span>
+							</div>
+							<div class="col-sm-10 spacer-mar-bottom">
+								<a href="mailto:inquiry@totallawncareoflf.com" title="Email us">inquiry@totallawncareoflf.com</a>
+							</div>
+							<!--
+							<div class="col-sm-2">
+								<span class="text-white"><strong>Address:</strong></span>
+							</div>
+							<div class="col-sm-10">							
+								<span itemscope itemtype="http://schema.org/PostalAddress">
+									<span itemprop="streetAddress">17494 Riverwood Drive</span><br/>
+									<span itemprop="addressLocality">Little Falls</span>, 
+									<span itemprop="addressRegion">Minnesota </span>
+									<span itemprop="postalCode">56345</span>
+								</span>
+							</div>
+							-->
+						</div>
+					</div>
+				</div>
+				<form id="form1" role="form" class="col-md-5 col-md-offset-1 text-white" runat="server" action="#">
+					<div class="form-contact">
+						<!-- Error message if submit failed -->
+						<asp:Label ID="lblResult" class="col-xs-12 alert alert-danger" Visible="false" runat="server"></asp:Label>
+						
+						<!-- Name -->
+						<div class="form-group">
+							<label for="ContactUs_Name">Name</label>
+							<input runat="server" type="text" class="form-control" id="ContactUs_Name" placeholder="Full Name">
+						</div>
+						<!-- Email Address -->
+						<div class="form-group">
+							<label for="ContactUs_Email">Email Address</label>
+							<input runat="server" type="text" class="form-control" id="ContactUs_Email" placeholder="example@mail.com">
+						</div>
+						<!-- Address -->
+						<div class="form-group">
+							<label for="ContactUs_Address">Street Address</label>
+							<input runat="server" type="text" class="form-control" id="ContactUs_Address" placeholder="Street Address">
+						</div>
+						<!-- City -->
+						<div class="form-group">
+							<label for="ContactUs_City">City</label>
+							<input runat="server" type="text" class="form-control" id="ContactUs_City" placeholder="City">
+						</div>
+						<!-- ZIP -->
+						<div class="form-group">
+							<label for="ContactUs_ZIP">Zip Code</label>
+							<input runat="server" type="text" class="form-control" id="ContactUs_ZIP" placeholder="Zip Code">
+						</div>
+						<!-- Phone -->
+						<div class="form-group">
+							<label for="ContactUs_Phone">Phone Number</label>
+							<input runat="server" type="text" class="form-control" id="ContactUs_Phone" placeholder="Phone Number">
+						</div>
+						<!-- Message -->
+						<div class="form-group">
+							<label for="ContactUs_Comments">Questions/Comments</label>
+							<textarea runat="server" class="form-control" rows="3" id="ContactUs_Comments" placeholder="Enter Questions or Comments"></textarea>
+						</div>
+						
+						
+						<!-- Submit -->
+						<asp:Button runat="server" type="submit" id="submitButton" class="btn btn-lg btn-block btn-success" Text="Submit" OnClick="btnSubmit_Click"></asp:Button>
+						
+					</div>
+					
+					<div class="FormSubmitted alert alert-success">
+						<h2>Thank You!</h2>
+						<h3>Your message has been sent.</h3>
+						<p>Thank you for your interest in Total Lawn Care. We will assess your inquiry and respond as soon as we can.</p>
+					</div>
+				</form>
+					
+				<asp:Panel runat="server" ID="FormSubmitted" Visible="false">
+					<style>
+						.form-contact{display:none}
+						.FormSubmitted{display:block;visibility:visible}
+					</style>
+				</asp:Panel>
+			</div>
+		</section>		
+	</div>
+	
+	<footer class="spacer-pad-vert" role="contentinfo">
+		<div class="container">
+			<div class="row">
+				<a class="col-xs-3 text-white" runat="server" href="https://www.facebook.com/TotalLawnCareoflf" title="Follow us on Facebook" target="_blank" ><img runat="server" src="~/img/facebook.png" alt="Connect with us on Facebook!" /></a>
+				<span class="col-xs-9 text-white text-right">&copy; 2014 Total Lawn Care</span>
+			</div>
+		</div>
+	</footer>
