@@ -1,0 +1,544 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap";
+
+
+/*****Table of Contents******
+	1. General
+		1a. General - Responsive
+	2. Main Slide
+		2a. Main Slide - Responsive
+	3. Navigation
+		3a. Navigation - Responsive
+	4. Our Story
+	5. Our Team
+		5a. Our Team - Responsive
+	6. Services
+	7. Lawn Care Tips
+	8. Testimonials
+		8a. Testimonials - Responsive
+	9. Contact Us
+		9a. Contact Us - Responsive
+	10. Footer
+****************************/
+	
+	
+/* 1. General */	
+	
+/*Border Arrow*/
+.arrow {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 25px 25px 0 25px;
+	border-color: #ffffff transparent transparent transparent;
+	position: relative;
+	left: 50%;
+	top: 25px;
+	transform: translateX(-50%);
+}
+
+
+/*Text*/
+.document-title {	/*For document outline titles*/
+	position: absolute;
+	clip: rect(1px 1px 1px 1px); /* IE6 & 7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+.font-impact {
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+	text-transform:uppercase;
+}
+	
+.text-white {
+	color:#fff;
+}
+
+.title-lg {
+	font-size:3em;
+}
+
+.title-md {
+	font-size:2em;
+}
+
+
+
+/*Modifiers*/
+.spacer-pad-vert {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.spacer-mar-vert {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.spacer-mar-bottom {
+	margin-bottom:15px;
+}
+
+.pos-rel {
+	position:relative;
+}
+
+.mar-0 {
+	margin:0;
+}
+
+.mar-top-0 {
+	margin-top:0;
+}
+
+
+
+/*Backgrounds*/
+.bg-para { 
+	background-size: cover !important;
+	background-attachment: scroll;
+}
+
+.bg-preTips {
+	background: url(/assets/bg/grass.jpg);
+	min-height:160px; 
+}
+
+.bg-preServices {
+	background: url(/assets/bg/bg-blue.jpg);
+	min-height:160px; 
+}
+
+.bg-contact {
+	min-height:160px;
+	padding:0;
+}
+
+.bg-white {
+	background-color:#fff;
+}
+
+/* 1a. General - Responsive */
+.img-responsive {
+	width:100%;
+}
+
+@media (min-width: 768px) {	
+	body {
+		font-size:14px;
+	}
+	
+	.arrow {
+		border-width: 50px 50px 0 50px;
+		top: 50px;
+	}
+
+	/*Modifiers*/
+	.spacer-pad-vert {
+		padding-top:2em;
+		padding-bottom: 2em;
+	}
+	
+	.spacer-mar-vert {
+		margin-top:2em;
+		margin-bottom: 2em;
+	}
+	
+	/*Titles*/
+	.title-lg {
+		font-size:4em;
+	}
+	
+	/*Parallax*/
+	.bg-para {
+		background-attachment: fixed;
+	}
+	
+	.bg-preServices {
+		min-height:215px; 
+	}
+	
+	.bg-preTips,
+	.bg-contact {
+		min-height:300px; 
+	}
+	
+	.bg-contact {
+		background: url(/assets/bg/fall.jpg);
+		padding:50px;
+	}
+}
+
+
+
+
+
+/* 2. Main Slide */
+/*make room for the mobile menu*/
+.carousel {
+	margin-top:64px;
+}
+
+.carousel-caption {
+	bottom: 50%;
+	transform: translateY(50%);
+	opacity: 0;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+.active .carousel-caption {
+	opacity: 1;
+}
+
+.slide-title {
+	border-top:1px solid #fff;
+	border-bottom:1px solid #fff;
+	padding:10px 0;
+	font-size:2.3em;
+}
+
+/* 2a. Main Slide - Responsive */
+@media (min-width: 600px) {
+	.slide-title {
+		font-size:4em;
+	}
+}
+
+@media (min-width: 768px) {
+	.carousel {
+		margin-top:0;
+	}
+	
+	.slide-title {
+		border-top:2px solid #fff;
+		border-bottom:2px solid #fff;
+		padding:20px 0;
+	}
+	
+	.slide-service {
+		text-align:left;
+	}
+}
+
+@media (min-width: 992px) {
+	.slide-title {
+		font-size:6em;
+	}
+}
+
+@media (min-width: 1200px) {
+	.slide-title {
+		font-size:7em;
+	}
+}
+
+@media (min-width: 1500px) {
+	.slide-title {
+		font-size:9em;
+	}
+}
+
+
+
+
+/* 3. Navigation */
+.navbar {
+	border-bottom:1px solid #eee;
+}
+
+.navbar-fixed-top {
+	padding:.5em 0;
+	background-color:#fff;
+}
+
+.navbar-brand {
+	padding:0;
+	margin-left:10px;
+}
+
+.navbar-brand img {
+	height:45px;
+}
+
+.navbar-collapse {
+	border-top:1px solid #eee;
+}
+
+.navbar-toggle .icon-bar {
+	background-color:#444;
+}
+
+.nav {
+	padding:0;
+	margin:0 -15px;
+}
+
+.nav > li.active a {
+	background-color:#eee;
+}
+
+.nav > li > a {
+	text-transform: uppercase;
+	font-weight:bold;
+	white-space:nowrap;
+}
+
+.logo-sticky img {
+	-webkit-transition: width .5s ease-in-out;
+	-moz-transition: width .5s ease-in-out;
+	-ms-transition: width .5s ease-in-out;
+	-o-transition: width .5s ease-in-out;
+	transition: width .5s ease-in-out;
+}
+
+/* 3a. Navigation - Responsive */
+@media (min-width: 768px) {
+	.navigation-container  {
+		height:110px;
+	}
+
+	.navbar-fixed-top {
+		position:relative;
+	}
+	
+	.navbar,
+	.navbar-collapse {
+		border:0;
+	}
+	
+	.nav {
+		margin:.5em 0;
+	}
+	
+	.nav > li {
+		padding:0
+	}
+	
+	.nav > li > a {
+		text-align:center;
+		padding:10px 0;
+	}
+	
+	/*StickyNav*/
+	.navbar-sticky {
+		position:fixed;
+		-webkit-transition: opacity 1s ease-in-out;
+		-moz-transition: opacity 1s ease-in-out;
+		-ms-transition: opacity 1s ease-in-out;
+		-o-transition: opacity 1s ease-in-out;
+		transition: opacity 1s ease-in-out;
+		border-bottom:1px solid #eee;
+	}
+	
+	.navbar-sticky .nav {
+		margin:0;
+	}
+	
+	.navbar-sticky .logo-sticky img {
+		width: 75px;
+	}	
+}
+
+@media (min-width: 992px) {
+	.nav {
+		margin:2em 0;
+	}
+	
+	.nav > li > a {
+		font-size:1.1em;
+	}
+}
+
+
+
+
+
+/* 4. Our Story */
+.img-about {
+	max-width:150px;
+}
+
+
+
+/* 5. Our Team */
+.team-container {
+	border:5px solid #188abf;
+	background-color:#188abf;
+}
+
+/* 5a. Our Team - Responsive */
+@media (min-width: 768px) {
+	.team-container {
+		border:2px solid #188abf;
+	}
+}
+
+
+
+
+/* 6. Services */
+.services-list {
+	font-size:1.3em;
+}
+
+.services-cta p {
+	font-size:13px;
+}
+
+/* 6a. Services - Responsive */
+@media (min-width: 768px) {
+	.services-cta {
+		margin:100px 25%;
+	}
+	
+	.services-cta p {
+		font-size:16px;
+	}
+}
+
+
+
+
+
+/* 7. Lawn Care Tips */
+.img-diy {
+	margin-top:-2em;
+}
+
+.caretips-circles img {
+	border:2px solid #ed1c24;
+}
+
+.caretips-explained {
+	border-top:3px solid #e7e7e7;
+	border-bottom:3px solid #e7e7e7;
+    -webkit-transition: height .5s; /* For Safari 3.1 to 6.0 */
+    transition: width .5s;
+	overflow:hidden;
+	background: #3E744F;
+}
+
+.caretips-tip {
+	display:none;
+}
+
+.tips-btn-min {
+	position: absolute;
+	right: 0;
+	border-radius: 0;
+}
+
+
+
+
+
+/* 8. Testimonials */
+.testimonials-container {
+	background: #eee;
+}
+
+.testimonials-container h3{
+	font-size: 1.4em;
+}
+
+.testimonials-container .media img {
+	max-width:130px;
+}	
+
+.testimonials-spreadword {
+	background-color:#F5CD95;
+	border-radius:15px;
+	padding:15px;
+}
+
+.testimonials-phonewire {
+	background-image: url(/assets/testimonials/phone.png);
+	background-repeat:no-repeat;
+	height: 108px;
+}
+
+/* 8a. Testimonials - Responsive */
+@media (min-width: 768px) {
+	.testimonials-container h3{
+		font-size: 1.714em;
+	}
+	
+	.testimonials-spreadword {
+		margin:0;
+	}
+}
+
+
+
+
+/* 9. Contact Us */
+.contact-container {
+	background-color:rgba(198,231,250, 0.9);
+	border-top: 10px solid #AACFE4;
+	border-bottom: 10px solid #AACFE4;
+	padding:20px;
+}
+
+.form-contact {
+	padding: 1em;
+	border-radius: .5em;
+	background-color: #7DBBDF;
+}
+
+.contact-methods {
+	font-size:16px;
+	margin:2em 0;
+	padding:1em 0;
+	border-top:3px solid #444;
+	border-bottom:3px solid #444;
+}
+
+.FormSubmitted {
+	display:none;
+}
+
+/* 9a. Contact Us - Responsive */
+@media (min-width: 768px) {
+	.contact-container {
+		border:0;
+		border-radius:15px;
+	}
+	
+	.contact-methods {
+		padding:2em 0;
+	}
+}
+
+
+@media (min-width: 992px) {
+	.contact-methods  {
+		margin:5em 0;
+	}
+}
+
+
+
+
+/* 10. Footer */
+footer {
+	background-color:#333;
+}
+
+
